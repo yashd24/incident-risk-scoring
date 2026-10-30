@@ -35,9 +35,6 @@ These prompts produced the build plan (its decisions log covers stack, case/aler
 ### D10
 > tie rule pick the latest one. cases will be compared using the id. unique identifier will be id always throughout the codebase
 
-
-> 2. im unable to understand. if the backend applies damping and the score updates then only the applied will be true right?
-
 ## 1. Build the plan
 > execute this plan... list the open questions in the end. do not commit anything.
 
