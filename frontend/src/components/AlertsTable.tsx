@@ -3,11 +3,10 @@ import type { Alert } from "../types";
 interface Props {
   alerts: Alert[];
   caseAlertIds: Set<number>;
-  hasCase: boolean;
   onAdd: (alertId: number) => void;
 }
 
-export default function AlertsTable({ alerts, caseAlertIds, hasCase, onAdd }: Props) {
+export default function AlertsTable({ alerts, caseAlertIds, onAdd }: Props) {
   return (
     <table>
       <thead>
@@ -32,7 +31,7 @@ export default function AlertsTable({ alerts, caseAlertIds, hasCase, onAdd }: Pr
               {caseAlertIds.has(a.id) ? (
                 <span className="muted">Added</span>
               ) : (
-                <button disabled={!hasCase} onClick={() => onAdd(a.id)}>
+                <button type="button" onClick={() => onAdd(a.id)}>
                   Add to case
                 </button>
               )}

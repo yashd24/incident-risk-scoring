@@ -63,7 +63,6 @@ export default function NewCasePage() {
           <AlertsTable
             alerts={alerts}
             caseAlertIds={new Set(selected.map((a) => a.id))}
-            hasCase
             onAdd={add}
           />
         </section>

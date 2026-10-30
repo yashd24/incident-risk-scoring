@@ -115,7 +115,7 @@ def test_apt_not_applied_reason():
 
 
 def test_adjustment_order_damping_then_escalation():
-    s = run([1, 5, 6, 7], [APT, BOOST][:1] + [DAMPING])
+    s = run([1, 5, 6, 7], [APT, DAMPING])
     assert [a.policy for a in s.adjustments] == [DAMPING, APT]
 
 

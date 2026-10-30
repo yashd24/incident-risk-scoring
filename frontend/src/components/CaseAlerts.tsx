@@ -26,7 +26,7 @@ export default function CaseAlerts({ alerts, onRemove }: Props) {
             <td>{a.category}</td>
             <td>{a.base_score}</td>
             <td>
-              <button onClick={() => onRemove(a.id)}>Remove</button>
+              <button type="button" onClick={() => onRemove(a.id)}>Remove</button>
             </td>
           </tr>
         ))}

@@ -168,7 +168,6 @@ export default function CaseDetailPage({ id }: { id: number }) {
             <AlertsTable
               alerts={alerts}
               caseAlertIds={new Set(draftAlerts.map((a) => a.id))}
-              hasCase
               onAdd={add}
             />
           </section>
